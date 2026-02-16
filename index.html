@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Absolute Cloud</title>
 
+  <link rel="icon" href="./images/logo.png">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -179,6 +180,25 @@
     <section class="wrapper">
 
       <!-- BEGIN: card -->
+       <div class="card1" data-effect="zoom">
+        <button class="card__save  js-save" type="button">
+          <i class="fa  fa-bookmark"></i>
+        </button>
+        <figure class="card__image">
+          <img src="https://c1.staticflickr.com/4/3935/32253842574_d3d449ab86_c.jpg" alt="Short description">
+        </figure>
+        <div class="card__header">
+          <figure class="card__profile">
+            <img src="./images/icon-01.png" alt="Short description">
+          </figure>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Implementation and Support Services</h3>
+        </div>
+        <div class="card__footer">
+          <p class=""></p>
+        </div>
+      </div>
       <div class="card1" data-effect="zoom">
         <button class="card__save  js-save" type="button">
           <i class="fa  fa-bookmark"></i>
@@ -317,11 +337,12 @@
   <span class="circle circle-light"></span>
   <span class="circle circle-pink"></span>
 
-  <div class="dots">
+  <div class="dots dots-pink"></div>
+  <!-- <div class="dots">
     <span></span><span></span><span></span><span></span><span></span>
     <span></span><span></span><span></span><span></span><span></span>
     <span></span><span></span><span></span><span></span><span></span>
-  </div>
+  </div> -->
 
   <div class="cta-content">
     <h2>
@@ -408,11 +429,12 @@
     </div>
 
     <!-- dotted decoration -->
-    <div class="dots">
+     <div class="dots dots-pink"></div>
+    <!-- <div class="dots">
       <span></span><span></span><span></span><span></span><span></span>
       <span></span><span></span><span></span><span></span><span></span>
       <span></span><span></span><span></span><span></span><span></span>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -481,11 +503,12 @@
   <span class="circle circle-light"></span>
   <span class="circle circle-pink"></span>
 
-  <div class="dots">
+  <div class="dots dots-pink"></div>
+  <!-- <div class="dots">
     <span></span><span></span><span></span><span></span><span></span>
     <span></span><span></span><span></span><span></span><span></span>
     <span></span><span></span><span></span><span></span><span></span>
-  </div>
+  </div> -->
 
   <div class="cta-content">
     <h2>
@@ -524,7 +547,7 @@
 
 </section>
 
-<section class="get-touch">
+<!-- <section class="get-touch">
   <div class="content">
     <div class="left">
       <div class="dots dots-blue"></div>
@@ -541,6 +564,73 @@
       <button class="contact-btn">Contact Us</button>
     </div>
   </div>
+</section> -->
+
+<section class="contact-section">
+
+  <!-- LEFT SIDE -->
+  <div class="contact-left">
+    <p class="sub-heading">// LET'S TALK</p>
+    <h1>Connect With Us</h1>
+    <p class="description">
+      You can connect with us by phone or email. Our team is here to help,
+      and we look forward to connecting with you.
+    </p>
+
+    <div class="info-box">
+      <div class="icon"><i class="fas fa-globe"></i></div>
+      <div>
+        <h3>Our Address:</h3>
+        <p>
+          1030, 10th floor, Hubtown Solaris, N.S. Phadke Marg,<br>
+          Near East West Flyover, Andheri (East), Mumbai 400 069<br>
+          INDIA
+        </p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div class="icon"><i class="fas fa-envelope"></i></div>
+      <div>
+        <h3>Our Mailbox:</h3>
+        <p>info@absolute.co.in</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div class="icon"><i class="fas fa-phone"></i></div>
+      <div>
+        <h3>Our Phone:</h3>
+        <p>+91 9833 419927</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="contact-right">
+    <p class="form-title">
+      Please fill the form below and we will get in touch with you to discuss your requirements.*
+    </p>
+
+    <form>
+      <div class="row">
+        <input type="text" placeholder="Name*" required>
+        <input type="text" placeholder="Company Name*" required>
+      </div>
+
+      <div class="row">
+        <input type="email" placeholder="Email*" required>
+        <input type="tel" placeholder="Phone*" required>
+      </div>
+
+      <input type="text" placeholder="Subject*" class="full" required>
+
+      <textarea placeholder="Message..." rows="6"></textarea>
+
+      <button type="submit">SEND MESSAGE</button>
+    </form>
+  </div>
+
 </section>
 
 

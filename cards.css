@@ -5,12 +5,12 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    background: #f5f7fb;
-}
+/* body {
+} */
 
 /* Section */
 .cards-section {
+    background: #f5f7fb;
     display: flex;
     justify-content: center;
     gap: 30px;

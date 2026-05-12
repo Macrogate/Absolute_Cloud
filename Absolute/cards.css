@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+}
+
+/* Section */
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 100px 20px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+    width: 380px;
+    background: white;
+    border-radius: 12px;
+    /* height: 600px; */
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.prod{
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.p2{
+    font-size: 450px;
+    line-height: 35px;
+}
+
+.card h3 {
+    margin: 20px 0 10px;
+    color: #0a1a3c;
+}
+
+.card p {
+    color: #666;
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #124f98;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ===== Scroll Animation ===== */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1.2s ease-in-out;
+}
+
+.scroll-animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Direction Variations */
+.fade-left {
+    transform: translateX(-60px);
+}
+
+.fade-right {
+    transform: translateX(60px);
+}
+
+.fade-up {
+    transform: translateY(60px);
+}
+
+.show.fade-left,
+.show.fade-right,
+.show.fade-up {
+    transform: translate(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}

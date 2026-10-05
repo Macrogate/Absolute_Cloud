@@ -52,6 +52,7 @@
       <a href="#" class="hov">Six Sigma Architecture</a>
       <a href="#" class="hov">Blog</a>
       <a href="#" class="hov">Case Study</a>
+      <a href="./payment.html" class="hov" style="color: blueviolet;">Payment</a>
     </nav>
 
     <button class="contact-btn">Contact Us</button>
@@ -62,28 +63,29 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <p class="tagline">CUTTING-EDGE IT SOLUTIONS</p>
-      <h1>
-        Unlocking Infinite <br>
-        Possibilities With <br>
-        Cloud Computing
-      </h1>
-      <p class="subtext">
-        Welcome to Absolute Cloud, where we strive towards making
-        the future meet the present.
-      </p>
-      <button class="read-more">Read More</button>
-    </div>
+  <!-- Hero Scroll Wrapper — drives scroll-pinned animation -->
+  <div class="hero-scroll-wrapper">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="tagline">CUTTING-EDGE IT SOLUTIONS</p>
+        <h1>
+          Unlocking Infinite <br>
+          Possibilities With <br>
+          Cloud Computing
+        </h1>
+        <p class="subtext">
+          Welcome to Absolute Cloud, where we strive towards making
+          the future meet the present.
+        </p>
+        <button class="read-more">Read More</button>
+      </div>
 
-    <div class="hero-image">
-      <img src="images/home.png" alt="Cloud Image">
-    </div>
-  </section>
+      <div class="hero-image" id="hero-frame-wrapper">
+        <canvas id="server-canvas"></canvas>
+      </div>
+    </section>
+  </div><!-- /.hero-scroll-wrapper -->
 
-  <br><br>
   <hr class="hr">
   <div class="hero1">
     <div class="dv1">
@@ -180,7 +182,7 @@
     <section class="wrapper">
 
       <!-- BEGIN: card -->
-       <div class="card1" data-effect="zoom">
+      <div class="card1 sigma-card-3d" data-effect="zoom">
         <button class="card__save  js-save" type="button">
           <i class="fa  fa-bookmark"></i>
         </button>
@@ -199,7 +201,7 @@
           <p class=""></p>
         </div>
       </div>
-      <div class="card1" data-effect="zoom">
+      <div class="card1 sigma-card-3d" data-effect="zoom">
         <button class="card__save  js-save" type="button">
           <i class="fa  fa-bookmark"></i>
         </button>
@@ -219,7 +221,7 @@
         </div>
       </div>
 
-      <div class="card1" data-effect="zoom">
+      <div class="card1 sigma-card-3d" data-effect="zoom">
         <button class="card__save  js-save" type="button">
           <i class="fa  fa-bookmark"></i>
         </button>
@@ -239,7 +241,7 @@
         </div>
       </div>
 
-      <div class="card1" data-effect="zoom">
+      <div class="card1 sigma-card-3d" data-effect="zoom">
         <button class="card__save  js-save" type="button">
           <i class="fa  fa-bookmark"></i>
         </button>
@@ -259,7 +261,7 @@
         </div>
       </div>
 
-      <div class="card1" data-effect="zoom">
+      <div class="card1 sigma-card-3d" data-effect="zoom">
         <button class="card__save  js-save" type="button">
           <i class="fa  fa-bookmark"></i>
         </button>
@@ -279,7 +281,7 @@
         </div>
       </div>
 
-      <div class="card1" data-effect="zoom">
+      <div class="card1 sigma-card-3d" data-effect="zoom">
         <button class="card__save  js-save" type="button">
           <i class="fa  fa-bookmark"></i>
         </button>
@@ -304,250 +306,247 @@
   </div>
 
   <section class="partners-section">
-  <div class="partners-left">
-    <h2>OUR PARTNERS</h2>
-    <a href="#" class="view-more">
-      View More <span>→</span>
-    </a>
-  </div>
+    <div class="partners-left">
+      <h2>OUR PARTNERS</h2>
+      <a href="#" class="view-more">
+        View More <span>→</span>
+      </a>
+    </div>
 
-  <div class="partners-right">
-    <div class="partner-card">
-      <img src="./images/hp.jpg" alt="HP">
+    <div class="partners-right">
+      <div class="partner-card">
+        <img src="./images/hp.jpg" alt="HP">
+      </div>
+      <div class="partner-card">
+        <img src="./images/samsung.jpg" alt="Intel">
+      </div>
+      <div class="partner-card">
+        <img src="/images/micron.jpg" alt="Dell">
+      </div>
+      <div class="partner-card">
+        <img src="/images/panel.jpg" alt="AWS">
+      </div>
+      <div class="partner-card">
+        <img src="/images/plesk.jpg" alt="Google Cloud">
+      </div>
     </div>
-    <div class="partner-card">
-      <img src="./images/samsung.jpg" alt="Intel">
-    </div>
-    <div class="partner-card">
-      <img src="/images/micron.jpg" alt="Dell">
-    </div>
-    <div class="partner-card">
-      <img src="/images/panel.jpg" alt="AWS">
-    </div>
-    <div class="partner-card">
-      <img src="/images/plesk.jpg" alt="Google Cloud">
-    </div>
-  </div>
-</section>
+  </section>
 
 
-<section class="cta-section">
-  <!-- Decorative Shapes -->
-  <span class="circle circle-blue"></span>
-  <span class="circle circle-light"></span>
-  <span class="circle circle-pink"></span>
+  <section class="cta-section">
+    <!-- Decorative Shapes -->
+    <span class="circle circle-blue"></span>
+    <span class="circle circle-light"></span>
+    <span class="circle circle-pink"></span>
 
-  <div class="dots dots-pink"></div>
-  <!-- <div class="dots">
+    <div class="dots dots-pink"></div>
+    <!-- <div class="dots">
     <span></span><span></span><span></span><span></span><span></span>
     <span></span><span></span><span></span><span></span><span></span>
     <span></span><span></span><span></span><span></span><span></span>
   </div> -->
 
-  <div class="cta-content">
-    <h2>
-      Reach out to us for personalized IT cloud solutions<br/>
-      <strong>perfectly tailored to your business needs</strong>
-    </h2>
+    <div class="cta-content">
+      <h2>
+        Reach out to us for personalized IT cloud solutions<br />
+        <strong>perfectly tailored to your business needs</strong>
+      </h2>
 
-    <a href="#" class="cta-btn">Contact Us</a>
-  </div>
-</section>
+      <a href="#" class="cta-btn">Contact Us</a>
+    </div>
+  </section>
 
-<section class="why-us">
-  <div class="header">
-    <span class="badge">TECH SUPERIORITY</span>
-    <h2>What Makes Us Better?</h2>
-    <p>Elevate your experience with our cutting-edge technology and seamless solutions.</p>
-  </div>
-
-  <div class="cards">
-    <div class="g1">
-      <span class="number">01</span>
-      <h3>5-Minute Service Response Time</h3>
-      <p>We guarantee a 5 minute response time with dedicated on-call support.</p>
-      <div class="icon">⚙️</div>
+  <section class="why-us">
+    <div class="header">
+      <span class="badge">TECH SUPERIORITY</span>
+      <h2>What Makes Us Better?</h2>
+      <p>Elevate your experience with our cutting-edge technology and seamless solutions.</p>
     </div>
 
-    <div class="g2">
-      <span class="number">02</span>
-      <h3>Experts in Cloud Computing Solutions</h3>
-      <p>We optimize cloud solutions for efficiency, scalability, and security.</p>
-      <div class="icon">🎖️</div>
+    <div class="cards">
+      <div class="g1 scroll-reveal">
+        <span class="number">01</span>
+        <h3>5-Minute Service Response Time</h3>
+        <p>We guarantee a 5 minute response time with dedicated on-call support.</p>
+        <div class="icon">⚙️</div>
+      </div>
+
+      <div class="g2 scroll-reveal">
+        <span class="number">02</span>
+        <h3>Experts in Cloud Computing Solutions</h3>
+        <p>We optimize cloud solutions for efficiency, scalability, and security.</p>
+        <div class="icon">🎖️</div>
+      </div>
+
+      <div class="g3 scroll-reveal">
+        <span class="number">03</span>
+        <h3>Unrivalled Server Performance and Uptime</h3>
+        <p>Experience uninterrupted service with unmatched uptime reliability.</p>
+        <div class="icon">💡</div>
+      </div>
+
+      <div class="g4 scroll-reveal">
+        <span class="number">04</span>
+        <h3>Trusted by Industry Leaders</h3>
+        <p>Renowned organizations rely on our IT solutions for success.</p>
+        <div class="icon">🛡️</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="presence">
+    <div class="presence-left">
+      <span class="badge">COMPANY STATS</span>
+      <h2>Our Presence</h2>
+      <p>
+        We’ve been awarded the National Gold Star Award in Delhi and ranked among
+        the 20 most promising data center solutions providers by CIOReview,
+        renowned for our round-the-clock services and affordable pricing.
+      </p>
     </div>
 
-    <div class="g3">
-      <span class="number">03</span>
-      <h3>Unrivalled Server Performance and Uptime</h3>
-      <p>Experience uninterrupted service with unmatched uptime reliability.</p>
-      <div class="icon">💡</div>
-    </div>
+    <div class="presence-right">
+      <div class="stat-card">
+        <h3>26</h3>
+        <div class="wave"></div>
+        <p>Glorious Years</p>
+      </div>
 
-    <div class="g4">
-      <span class="number">04</span>
-      <h3>Trusted by Industry Leaders</h3>
-      <p>Renowned organizations rely on our IT solutions for success.</p>
-      <div class="icon">🛡️</div>
-    </div>
-  </div>
-</section>
+      <div class="stat-card">
+        <h3>115+</h3>
+        <div class="wave"></div>
+        <p>Locations Served</p>
+      </div>
 
-<section class="presence">
-  <div class="presence-left">
-    <span class="badge">COMPANY STATS</span>
-    <h2>Our Presence</h2>
-    <p>
-      We’ve been awarded the National Gold Star Award in Delhi and ranked among
-      the 20 most promising data center solutions providers by CIOReview,
-      renowned for our round-the-clock services and affordable pricing.
-    </p>
-  </div>
+      <div class="stat-card">
+        <h3>360+</h3>
+        <div class="wave"></div>
+        <p>Unique Projects</p>
+      </div>
 
-  <div class="presence-right">
-    <div class="stat-card">
-      <h3>26</h3>
-      <div class="wave"></div>
-      <p>Glorious Years</p>
-    </div>
+      <div class="stat-card">
+        <h3>1000+</h3>
+        <div class="wave"></div>
+        <p>Active Clients</p>
+      </div>
 
-    <div class="stat-card">
-      <h3>115+</h3>
-      <div class="wave"></div>
-      <p>Locations Served</p>
-    </div>
-
-    <div class="stat-card">
-      <h3>360+</h3>
-      <div class="wave"></div>
-      <p>Unique Projects</p>
-    </div>
-
-    <div class="stat-card">
-      <h3>1000+</h3>
-      <div class="wave"></div>
-      <p>Active Clients</p>
-    </div>
-
-    <!-- dotted decoration -->
-     <div class="dots dots-pink"></div>
-    <!-- <div class="dots">
+      <!-- dotted decoration -->
+      <div class="dots dots-pink"></div>
+      <!-- <div class="dots">
       <span></span><span></span><span></span><span></span><span></span>
       <span></span><span></span><span></span><span></span><span></span>
       <span></span><span></span><span></span><span></span><span></span>
     </div> -->
-  </div>
-</section>
-
-
-<section class="cloud-section">
-  <h2 class="main-heading">
-    Are Cloud Computing Solutions The Right Choice For You?
-  </h2>
-
-  <div class="cloud-content">
-    <!-- LEFT IMAGE -->
-    <div class="cloud-image">
-      <img
-        src="./images/it.jpg"
-        alt="Cloud Computing"
-      />
     </div>
+  </section>
 
-    <!-- RIGHT CONTENT -->
-    <div class="cloud-text">
-      <p>
-        IT cloud consulting services are becoming immensely popular due to their
-        flexibility, lower cost, and several other benefits. But how would you
-        know if it’s the right choice for your business’s needs?
-      </p>
 
-      <p>
-        If you are experiencing rapid growth in your business, but do not have
-        the infrastructure required to facilitate it, cloud computing solutions
-        are the way to go.
-      </p>
+  <section class="cloud-section">
+    <h2 class="main-heading">
+      Are Cloud Computing Solutions The Right Choice For You?
+    </h2>
 
-      <p>
-        Here are a few signs that tell you, you should partner with a cloud
-        service provider company:
-      </p>
+    <div class="cloud-content">
+      <!-- LEFT IMAGE -->
+      <div class="cloud-image">
+        <img src="./images/it.jpg" alt="Cloud Computing" />
+      </div>
 
-      <ul>
-        <li>If your internal servers do not have much space left for new data.</li>
-        <li>
-          If you want to facilitate anywhere, anytime accessibility of business
-          applications to your employees.
-        </li>
-        <li>
-          If you need more servers or databases at a lower cost or immediately.
-        </li>
-        <li>
-          If you are looking for state-of-the-art
-          <a href="#">enterprise backup solutions</a>.
-        </li>
-        <li>
-          If you want to share files with a large number of people for
-          collaboration.
-        </li>
-        <li>
-          If you are looking for assurance of Cloud’s security for your business.
-        </li>
-      </ul>
+      <!-- RIGHT CONTENT -->
+      <div class="cloud-text">
+        <p>
+          IT cloud consulting services are becoming immensely popular due to their
+          flexibility, lower cost, and several other benefits. But how would you
+          know if it’s the right choice for your business’s needs?
+        </p>
+
+        <p>
+          If you are experiencing rapid growth in your business, but do not have
+          the infrastructure required to facilitate it, cloud computing solutions
+          are the way to go.
+        </p>
+
+        <p>
+          Here are a few signs that tell you, you should partner with a cloud
+          service provider company:
+        </p>
+
+        <ul>
+          <li>If your internal servers do not have much space left for new data.</li>
+          <li>
+            If you want to facilitate anywhere, anytime accessibility of business
+            applications to your employees.
+          </li>
+          <li>
+            If you need more servers or databases at a lower cost or immediately.
+          </li>
+          <li>
+            If you are looking for state-of-the-art
+            <a href="#">enterprise backup solutions</a>.
+          </li>
+          <li>
+            If you want to share files with a large number of people for
+            collaboration.
+          </li>
+          <li>
+            If you are looking for assurance of Cloud’s security for your business.
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="cta-section">
-  <!-- Decorative Shapes -->
-  <span class="circle circle-blue"></span>
-  <span class="circle circle-light"></span>
-  <span class="circle circle-pink"></span>
+  <section class="cta-section">
+    <!-- Decorative Shapes -->
+    <span class="circle circle-blue"></span>
+    <span class="circle circle-light"></span>
+    <span class="circle circle-pink"></span>
 
-  <div class="dots dots-pink"></div>
-  <!-- <div class="dots">
+    <div class="dots dots-pink"></div>
+    <!-- <div class="dots">
     <span></span><span></span><span></span><span></span><span></span>
     <span></span><span></span><span></span><span></span><span></span>
     <span></span><span></span><span></span><span></span><span></span>
   </div> -->
 
-  <div class="cta-content">
-    <h2>
-      Reach out to us for personalized IT cloud solutions<br/>
-      <strong>perfectly tailored to your business needs</strong>
-    </h2>
+    <div class="cta-content">
+      <h2>
+        Reach out to us for personalized IT cloud solutions<br />
+        <strong>perfectly tailored to your business needs</strong>
+      </h2>
 
-    <a href="#" class="cta-btn">Contact Us</a>
-  </div>
-</section>
-
-
-<section class="clientele-section">
-  <span class="brand-tag">BRANDS</span>
-  <h2 class="title">Our Clientele</h2>
-
-  <div class="logo-wrapper">
-    <div class="logo-box">
-      <img src="./images/clientele-49.jpg" alt="Accurex">
+      <a href="#" class="cta-btn">Contact Us</a>
     </div>
-    <div class="logo-box">
-      <img src="./images/clientele-48.jpg" alt="Tata Motors">
-    </div>
-    <div class="logo-box">
-      <img src="./images/clientele-47.jpg" alt="HDFC School">
-    </div>
-    <div class="logo-box">
-      <img src="./images/clientele-46.jpg" alt="Sneha">
-    </div>
-    <div class="logo-box">
-      <img src="./images/clientele-45.jpg" alt="NTC">
-    </div>
-
-  </div>
+  </section>
 
 
-</section>
+  <section class="clientele-section">
+    <span class="brand-tag">BRANDS</span>
+    <h2 class="title">Our Clientele</h2>
 
-<!-- <section class="get-touch">
+    <div class="logo-wrapper">
+      <div class="logo-box">
+        <img src="./images/clientele-49.jpg" alt="Accurex">
+      </div>
+      <div class="logo-box">
+        <img src="./images/clientele-48.jpg" alt="Tata Motors">
+      </div>
+      <div class="logo-box">
+        <img src="./images/clientele-47.jpg" alt="HDFC School">
+      </div>
+      <div class="logo-box">
+        <img src="./images/clientele-46.jpg" alt="Sneha">
+      </div>
+      <div class="logo-box">
+        <img src="./images/clientele-45.jpg" alt="NTC">
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- <section class="get-touch">
   <div class="content">
     <div class="left">
       <div class="dots dots-blue"></div>
@@ -566,144 +565,147 @@
   </div>
 </section> -->
 
-<section class="contact-section">
+  <section class="contact-section">
 
-  <!-- LEFT SIDE -->
-  <div class="contact-left">
-    <p class="sub-heading">// LET'S TALK</p>
-    <h1>Connect With Us</h1>
-    <p class="description">
-      You can connect with us by phone or email. Our team is here to help,
-      and we look forward to connecting with you.
-    </p>
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+      <p class="sub-heading">// LET'S TALK</p>
+      <h1>Connect With Us</h1>
+      <p class="description">
+        You can connect with us by phone or email. Our team is here to help,
+        and we look forward to connecting with you.
+      </p>
 
-    <div class="info-box">
-      <div class="icon"><i class="fas fa-globe"></i></div>
+      <div class="info-box">
+        <div class="icon"><i class="fas fa-globe"></i></div>
+        <div>
+          <h3>Our Address:</h3>
+          <p>
+            1030, 10th floor, Hubtown Solaris, N.S. Phadke Marg,<br>
+            Near East West Flyover, Andheri (East), Mumbai 400 069<br>
+            INDIA
+          </p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <div class="icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <h3>Our Mailbox:</h3>
+          <p>info@absolute.co.in</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <div class="icon"><i class="fas fa-phone"></i></div>
+        <div>
+          <h3>Our Phone:</h3>
+          <p>+91 9833 419927</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="contact-right">
+      <p class="form-title">
+        Please fill the form below and we will get in touch with you to discuss your requirements.*
+      </p>
+
+      <form>
+        <div class="row">
+          <input type="text" placeholder="Name*" required>
+          <input type="text" placeholder="Company Name*" required>
+        </div>
+
+        <div class="row">
+          <input type="email" placeholder="Email*" required>
+          <input type="tel" placeholder="Phone*" required>
+        </div>
+
+        <input type="text" placeholder="Subject*" class="full" required>
+
+        <textarea placeholder="Message..." rows="6"></textarea>
+
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+
+  </section>
+
+
+
+  <footer class="footer">
+
+    <div class="footer-top">
+
+      <!-- About -->
       <div>
-        <h3>Our Address:</h3>
-        <p>
-          1030, 10th floor, Hubtown Solaris, N.S. Phadke Marg,<br>
-          Near East West Flyover, Andheri (East), Mumbai 400 069<br>
-          INDIA
+        <div class="footer-logo">
+          ☁ Absolute Cloud
+        </div>
+        <p class="footer-about">
+          At Absolute Cloud, an ISO 27001 and ISO 9001 certified company, we empower organizations to harness the full
+          potential of cutting-edge IT solutions.
         </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-    </div>
 
-    <div class="info-box">
-      <div class="icon"><i class="fas fa-envelope"></i></div>
+      <!-- Quick Links -->
       <div>
-        <h3>Our Mailbox:</h3>
-        <p>info@absolute.co.in</p>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Products</a></li>
+          <li><a href="#">Six Sigma Architecture</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
       </div>
-    </div>
 
-    <div class="info-box">
-      <div class="icon"><i class="fas fa-phone"></i></div>
+      <!-- Products -->
       <div>
-        <h3>Our Phone:</h3>
-        <p>+91 9833 419927</p>
+        <h4>Our Products</h4>
+        <ul>
+          <li><a href="#">Dedicated Servers</a></li>
+          <li><a href="#">Tally on the Cloud</a></li>
+          <li><a href="#">GPU Dedicated Servers</a></li>
+          <li><a href="#">Video Streaming Servers</a></li>
+          <li><a href="#">Enterprise Backup Solutions</a></li>
+          <li><a href="#">TSPlus Secure Software</a></li>
+          <li><a href="#">TSPrint & TSScan Solution</a></li>
+        </ul>
       </div>
+
+      <!-- Contact -->
+      <div class="contact-info">
+        <h4>Connect</h4>
+        <p>
+          Address: 1030, 10th Floor, Hubtown Solaris, N.S. Phadke Marg, Near East West Flyover, Andheri (East), Mumbai –
+          400 069, Maharashtra.
+        </p>
+        <p>Phone : <span>+91 9833 419927</span></p>
+        <p>Email : <span>info@absolute.co.in</span></p>
+      </div>
+
     </div>
-  </div>
 
-  <!-- RIGHT SIDE -->
-  <div class="contact-right">
-    <p class="form-title">
-      Please fill the form below and we will get in touch with you to discuss your requirements.*
-    </p>
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>Copyright © 2026 Absolute Networks Pvt Ltd. All Rights Reserved. Made by <span
+          style="color:#1a4fa3;">Capsicum</span></p>
 
-    <form>
-      <div class="row">
-        <input type="text" placeholder="Name*" required>
-        <input type="text" placeholder="Company Name*" required>
-      </div>
-
-      <div class="row">
-        <input type="email" placeholder="Email*" required>
-        <input type="tel" placeholder="Phone*" required>
-      </div>
-
-      <input type="text" placeholder="Subject*" class="full" required>
-
-      <textarea placeholder="Message..." rows="6"></textarea>
-
-      <button type="submit">SEND MESSAGE</button>
-    </form>
-  </div>
-
-</section>
-
-
-
-<footer class="footer">
-
-  <div class="footer-top">
-
-    <!-- About -->
-    <div>
-      <div class="footer-logo">
-        ☁ Absolute Cloud
-      </div>
-      <p class="footer-about">
-        At Absolute Cloud, an ISO 27001 and ISO 9001 certified company, we empower organizations to harness the full potential of cutting-edge IT solutions.
-      </p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+      <div class="footer-links">
+        <a href="#">ISO 9001</a>
+        <a href="#">ISO 27001</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
       </div>
     </div>
 
-    <!-- Quick Links -->
-    <div>
-      <h4>Quick links</h4>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our Products</a></li>
-        <li><a href="#">Six Sigma Architecture</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
-
-    <!-- Products -->
-    <div>
-      <h4>Our Products</h4>
-      <ul>
-        <li><a href="#">Dedicated Servers</a></li>
-        <li><a href="#">Tally on the Cloud</a></li>
-        <li><a href="#">GPU Dedicated Servers</a></li>
-        <li><a href="#">Video Streaming Servers</a></li>
-        <li><a href="#">Enterprise Backup Solutions</a></li>
-        <li><a href="#">TSPlus Secure Software</a></li>
-        <li><a href="#">TSPrint & TSScan Solution</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact -->
-    <div class="contact-info">
-      <h4>Connect</h4>
-      <p>
-        Address: 1030, 10th Floor, Hubtown Solaris, N.S. Phadke Marg, Near East West Flyover, Andheri (East), Mumbai – 400 069, Maharashtra.
-      </p>
-      <p>Phone : <span>+91 9833 419927</span></p>
-      <p>Email : <span>info@absolute.co.in</span></p>
-    </div>
-
-  </div>
-
-  <!-- Bottom -->
-  <div class="footer-bottom">
-    <p>Copyright © 2026 Absolute Networks Pvt Ltd. All Rights Reserved. Made by <span style="color:#1a4fa3;">Capsicum</span></p>
-
-    <div class="footer-links">
-      <a href="#">ISO 9001</a>
-      <a href="#">ISO 27001</a>
-      <a href="#">Terms & Conditions</a>
-      <a href="#">Privacy Policy</a>
-    </div>
-  </div>
-
-</footer>
+  </footer>
 
 
 

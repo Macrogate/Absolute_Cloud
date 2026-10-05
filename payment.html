@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - Absolute Cloud</title>
+  <link rel="icon" href="./images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #03081a 0%, #061530 50%, #03081a 100%);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Decorative background shapes */
+    .shape {
+      position: absolute;
+      filter: blur(100px);
+      z-index: -1;
+    }
+
+    .shape-1 {
+      width: 400px;
+      height: 400px;
+      background: rgba(0, 212, 255, 0.3);
+      top: -100px;
+      left: -100px;
+      border-radius: 50%;
+    }
+
+    .shape-2 {
+      width: 300px;
+      height: 300px;
+      background: rgba(216, 53, 112, 0.3);
+      bottom: -50px;
+      right: -50px;
+      border-radius: 50%;
+    }
+
+    .payment-container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 50px 40px;
+      width: 100%;
+      max-width: 450px;
+      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .logo-container {
+      margin-bottom: 30px;
+    }
+
+    .logo-container img {
+      height: 50px;
+      filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+    }
+
+    .payment-container h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .payment-container p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 30px;
+    }
+
+    .input-group {
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .input-wrapper i {
+      position: absolute;
+      left: 15px;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 18px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 15px 15px 15px 45px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      color: #fff;
+      font-size: 18px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .input-group input:focus {
+      border-color: #00d4ff;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+    }
+
+    /* Remove arrows from number input */
+    .input-group input::-webkit-outer-spin-button,
+    .input-group input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .input-group input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    .pay-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #124f98, #1a7fd4);
+      color: white;
+      border: none;
+      padding: 16px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 8px 25px rgba(18, 79, 152, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .pay-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(18, 79, 152, 0.6);
+      background: linear-gradient(135deg, #1a7fd4, #124f98);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #00d4ff;
+    }
+
+    /* Simple animation for container */
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .payment-container {
+      animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Decorative Shapes -->
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+
+  <div class="payment-container">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Absolute Cloud Logo">
+    </div>
+
+    <h2>Secure Payment</h2>
+    <p>Enter the amount you wish to pay.</p>
+
+    <div class="input-group">
+      <label for="amount">Payment Amount</label>
+      <div class="input-wrapper">
+        <i class="fas fa-rupee-sign"></i>
+        <input type="number" id="amount" placeholder="0.00" min="1" step="any" required>
+      </div>
+    </div>
+
+    <button class="pay-btn" onclick="processPayment()">
+      <i class="fas fa-lock"></i> Pay Now
+    </button>
+
+    <a href="index.html" class="back-link">
+      <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+  </div>
+
+  <script>
+    function processPayment() {
+      const amount = document.getElementById('amount').value;
+      if (!amount || amount <= 0) {
+        alert("Please enter a valid amount.");
+        return;
+      }
+      // Mock payment process for now
+      const btn = document.querySelector('.pay-btn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Processing...';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        alert("Payment process for ₹" + amount + " would start here!");
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }, 1500);
+    }
+  </script>
+</body>
+
+</html>
